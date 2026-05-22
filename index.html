@@ -265,6 +265,17 @@
       opacity: 0.9;
     }
 
+    a.store-btn {
+      cursor: pointer;
+      opacity: 1;
+    }
+
+    a.store-btn:hover {
+      border-color: var(--surface-background-color-shade-30);
+      opacity: 1;
+      background: var(--surface-background-color-tint-20);
+    }
+
     .store-btn-inner {
       display: flex;
       flex-direction: column;
@@ -542,8 +553,21 @@
 
     <!-- Store Buttons -->
     <div class="store-section">
-      <span class="store-label">Also coming to</span>
+      <span class="store-label">Also available on</span>
       <div class="store-buttons">
+
+        <a class="store-btn" href="https://apps.microsoft.com/detail/9nl02b6cb2nm?hl=en-US" target="_blank" rel="noopener noreferrer">
+          <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h11.5v11.5H0z" fill="#F25022"/>
+            <path d="M12.5 0H24v11.5H12.5z" fill="#7FBA00"/>
+            <path d="M0 12.5h11.5V24H0z" fill="#00A4EF"/>
+            <path d="M12.5 12.5H24V24H12.5z" fill="#FFB900"/>
+          </svg>
+          <span class="store-btn-inner">
+            <span class="store-btn-sub">Get it from</span>
+            <span class="store-btn-name">Microsoft Store</span>
+          </span>
+        </a>
 
         <span class="store-btn">
           <span class="coming-soon-badge">Coming Soon</span>
@@ -562,20 +586,6 @@
           <span class="store-btn-inner">
             <span class="store-btn-sub">Download on the</span>
             <span class="store-btn-name">App Store</span>
-          </span>
-        </span>
-
-        <span class="store-btn">
-          <span class="coming-soon-badge">Coming Soon</span>
-          <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0h11.5v11.5H0z" fill="#F25022"/>
-            <path d="M12.5 0H24v11.5H12.5z" fill="#7FBA00"/>
-            <path d="M0 12.5h11.5V24H0z" fill="#00A4EF"/>
-            <path d="M12.5 12.5H24V24H12.5z" fill="#FFB900"/>
-          </svg>
-          <span class="store-btn-inner">
-            <span class="store-btn-sub">Get it from</span>
-            <span class="store-btn-name">Microsoft Store</span>
           </span>
         </span>
 
